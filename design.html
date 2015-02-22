@@ -9,28 +9,30 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="group">
+	<header _group>
 		<img _logo="classic" src="img/logo.svg" alt="Hello, my name is Ashley">
 		<nav _nav="top">
-			<ul>
-				<li _nav-item><a href="index.html">Home</a></li>
-				<li _nav-item><a href="about.html">About</a></li>
-				<li _nav-item><a href="design.html">Design</a></li>
-				<li _nav-item><a href="music.html">Music</a></li>
-				<li _nav-item><a href="writing.html">Writing</a></li>
-				<li _nav-item><a href="contact.html">Contact</a></li>
+			<ul>				
+				<li _nav-item="horizontal"><a href="index.html">Home</a></li>
+				<li _nav-item="horizontal"><a href="about.html">About</a></li>
+				<li _nav-item="horizontal"><a href="design.html">Design</a></li>
+				<li _nav-item="horizontal"><a href="music.html">Music</a></li>
+				<li _nav-item="horizontal"><a href="writing.html">Writing</a></li>
+				<li _nav-item="horizontal"><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 
+	<div _group="page-head">
 		<p _text="headline">What Have I Done?</p>
-
-	<div _col="1/3" class="group">
 		<p _text="tagline">I've made many things.</p>
+	</div>
+
+	<div _col="1/3" _group="content">
 		<p _text="body">Hashtag meditation swag, salvia narwhal DIY four dollar toast.  Neutra Truffaut food truck next level lumbersexual, salvia fingerstache butcher tilde +1 photo booth yr flexitarian.  Stumptown synth kale chips, skateboard flannel mlkshk chambray church-key hella kitsch.  Mixtape cornhole plaid seitan.  Ugh mlkshk vegan iPhone Shoreditch, ethical High Life dreamcatcher hoodie.  Gluten-free cred photo booth put a bird on it, small batch normcore heirloom selfies tattooed church-key blog Echo Park 90's.  Vegan plaid authentic, banh mi ennui Kickstarter hashtag chambray four loko mustache scenester 8-bit.</p>
 	</div>
 
-	<div _col="1/3" class="group">
+	<div _col="1/3" _group="content">
 		<a href="#">
 		<p _text="title">Mosquita Y Mari</p>
 		<p _text="tagline">print</p>
@@ -56,7 +58,7 @@
 		</a>
 	</div>
 
-	<div _col="1/3" class="group">
+	<div _col="1/3" _group="content">
 		<a href="#">
 		<p _text="title">Mosquita Y Mari</p>
 		<p _text="tagline">print</p>

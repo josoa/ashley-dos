@@ -1,7 +1,17 @@
-.group:after {
+[_group]:after {
 	display: table;
 	clear: both;
 	content: "";
+}
+
+[_group~="page-head"] {
+	margin-bottom: 15px;
+	border-bottom: solid 2px black;
+	display: block;
+}
+
+[_group~="content"] {
+
 }
 
 /**********************
@@ -84,17 +94,22 @@ header {
 }
 
 [_nav~="vertical"] {
-	
+
 }
 
 [_nav-item] {
+	padding: 0;
+}
+
+[_nav-item~="horizontal"] {
 	float: left;
 	margin-left: 15px;
 }
 
-[_nav-item~="write"] {
+[_nav-item~="vertical"] {
 	float: none;
 	display: block;
+	margin-bottom: .25em;
 }
 
 
@@ -104,11 +119,6 @@ header {
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
-	/*text-align: justify;*/
-}
-
-h1 {
-	font-size: 2em;
 }
 
 a {
@@ -137,18 +147,22 @@ li {
 
 [_text~="headline"] {
 	font-size: 2.125em; /*34px*/
-	line-height: 3.4375em; /*55px*/
+	/*line-height: 3.4375em; 55px*/
 }
 
 [_text~="title"] {
 	font-size: 1.25em; /*20px*/
-	line-height: 2em; /*32px*/
+	/*line-height: 2em; /*32px*/
 }
 
-[_text~="body"] {
+[_text~="body"], [_text~="words"]  {
 	font-size: 1em; /*16px*/
 	line-height: 1.625em; /*26px*/
 	text-align: justify;
+}
+
+[_text~="words"] {
+	color: hsl(0,0%,50%);
 }
 
 [_text~="list"]{
@@ -157,7 +171,7 @@ li {
 
 [_text~="tagline"] {
 	font-size: 0.875em; /*14px*/
-	line-height: 1.4375em; /*23px*/
+	margin-bottom: 1em;
 }
 
 [_text~="blockquote"] {
@@ -227,7 +241,7 @@ li {
 	background-color: white;
 	visibility: hidden;
 	display: none;
-	padding: 0;
+	padding-right: 100px;
 }
 
 input[name="words"]:checked + .wordContent {

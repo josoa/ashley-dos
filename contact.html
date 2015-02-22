@@ -13,19 +13,21 @@
 		<img _logo="classic" src="img/logo.svg" alt="Hello, my name is Ashley">
 		<nav _nav="top">
 			<ul>
-				<li _nav-item><a href="index.html">Home</a></li>
-				<li _nav-item><a href="about.html">About</a></li>
-				<li _nav-item><a href="design.html">Design</a></li>
-				<li _nav-item><a href="music.html">Music</a></li>
-				<li _nav-item><a href="writing.html">Writing</a></li>
-				<li _nav-item><a href="contact.html">Contact</a></li>
+				<li _nav-item="horizontal"><a href="index.html">Home</a></li>
+				<li _nav-item="horizontal"><a href="about.html">About</a></li>
+				<li _nav-item="horizontal"><a href="design.html">Design</a></li>
+				<li _nav-item="horizontal"><a href="music.html">Music</a></li>
+				<li _nav-item="horizontal"><a href="writing.html">Writing</a></li>
+				<li _nav-item="horizontal"><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 
+	<div _group="page-head">
 		<p _text="headline">Want to Chat?</p>
+		<p _text="tagline">Hey, me too.</p>
+	</div>
 
-		<div _col="1/3" class="group">
-			<p _text="tagline">Hey, me too.</p>
-			<p _text="body">Email is the best way to get ahold of me. You can send something to <a href="mailto:ashley@sourcre.am">ashley@sourcre.am</a> or fill out this handy dandy form.</p>	
-		</div>
+	<div _col="1/3" _group="content">
+		<p _text="body">Email is the best way to get a hold of me. You can send something to <a href="mailto:ashley@sourcre.am">ashley@sourcre.am</a> or fill out this handy dandy form.</p>	
+	</div>
