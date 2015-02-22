@@ -1,4 +1,4 @@
-[_group]:after {
+.group:after {
 	display: table;
 	clear: both;
 	content: "";
@@ -11,7 +11,7 @@
 body {
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 0;
+	padding: 15px;
 }
 
 [_col] {
@@ -91,6 +91,12 @@ header {
 	float: left;
 	margin-left: 15px;
 }
+
+[_nav-item~="write"] {
+	float: none;
+	display: block;
+}
+
 
 /**********************
 	  TYPOGRAPHY
@@ -204,6 +210,32 @@ li {
 [_picture~="video"] {
 	height: 200px;
 }
+
+
+/**********************
+		WRITING
+**********************/
+
+.container {
+	position: relative;
+}
+
+.wordContent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	visibility: hidden;
+	display: none;
+	padding: 0;
+}
+
+input[name="words"]:checked + .wordContent {
+	visibility: visible;
+	display: block;
+}
+
+
 /**********************
 		FORM
 **********************/
