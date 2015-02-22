@@ -152,7 +152,6 @@ li {
 
 [_text~="title"] {
 	font-size: 1.25em; /*20px*/
-	/*line-height: 2em; /*32px*/
 }
 
 [_text~="body"], [_text~="words"]  {
@@ -163,6 +162,7 @@ li {
 
 [_text~="words"] {
 	color: hsl(0,0%,50%);
+	margin-top: 15px;
 }
 
 [_text~="list"]{
