@@ -274,6 +274,7 @@ ul li[_text~="list"]:last-of-type {
 [_picture~="project-preview"] {
 	background: #000;
 	height: 200px;
+	overflow: hidden;
 }
 
 [_picture~="video"] {
@@ -282,6 +283,7 @@ ul li[_text~="list"]:last-of-type {
 
 [_picture~="project-full"] {
 	float: right;
+	margin-bottom: 15px;
 }
 
 /**********************
@@ -290,13 +292,14 @@ ul li[_text~="list"]:last-of-type {
 
 .lightbox {
 	display: none;
-	position: fixed;
-	z-index: 99;
-	width: 66%;
-	height: 100%;
+	position: absolute;
+	z-index: 2;
+	width: auto;
+	height: auto;
 	right: 0;
 	top: 0;
-	background: black;
+	margin: 200px 50px 0;
+	background: white;
 }
 
 .lightbox div {
