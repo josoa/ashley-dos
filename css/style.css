@@ -122,13 +122,13 @@ header {
 }
 
 [_nav-item~="horizontal"] > a:link, [_nav-item~="horizontal"] > a:visited {
-	/*color: hsl(0, 0%, 10%);*/
-	color: #252629;
+	color: hsl(0, 0%, 13%);
+	/*color: #252629;*/
 }
 
 [_nav-item~="horizontal"] > a:hover, [_nav-item~="horizontal"] > a:target {
-	/*color: hsl(0, 0%, 50%);*/
-	color: #778DAF;
+	color: hsl(216, 26%, 58%);
+	/*color: #778DAF;*/
 	border-bottom: solid 3px #778DAF;
 }
 
@@ -136,11 +136,11 @@ header {
 	float: none;
 	display: block;
 	margin-bottom: .25em;
-	color: #252629;
+	color: hsl(216, 26%, 58%);
 }
 
 label[_nav-item~="vertical"]:hover {
-	color: #878C6A;
+	color: hsl(0, 0%, 13%);;
 }
 
 
@@ -150,7 +150,8 @@ label[_nav-item~="vertical"]:hover {
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
-	color: #252629;
+	/*color: #252629;*/
+	color: hsl(0,0%,13%);
 }
 
 p {
@@ -158,7 +159,7 @@ p {
 }
 
 [_text] {
-	/*color: hsl(0,0%,13%);*/
+	color: hsl(0,0%,13%);
 	/*color: #252629;*/
 	font-size: 100%;
 	-webkit-font-smoothing: antialiased;
@@ -170,7 +171,7 @@ a {
 }
 
 a:link, a:visited {
-	color: hsl(0, 0%, 50%);
+	color: hsl(216, 26%, 58%);
 	/*color: #778DAF;*/
 }
 
@@ -180,23 +181,20 @@ a:hover, a:target {
 }
 
 [_text~="headline"], [_text~="title"], [_text~="title"] > a:link, [_text~="title"] > a:visited {
-	color: hsl(0,0%,20%);
+	color: hsl(0, 0%, 26%);
 	/*color: #56595C;*/
 }
 
 [_text~="headline"] {
 	font-size: 2.125em; /*34px*/
-	font-weight: 100;
-	letter-spacing: .05em;
-
+	/*font-weight: 100;*/
+	/*letter-spacing: .05em;*/
 }
 
 [_text~="title"] {
 	font-size: 1.25em; /*20px*/
 	font-weight: 700;
 	letter-spacing: .02em;
-
-
 }
 
 [_text~="title"] > a:hover, [_text~="title"] > a:target {
